@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> www. BiConnector.com</title>
+    <style>
+        body {
+        
+            background-image: url(bc2.jpeg);
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+
+
+        }
+        .navbar{
+            background-color: rgb(255,255,255,0.9);
+            box-shadow: 0 4px 6px rgb(0,0,0 0.1);
+            position: sticky;
+            top:0;
+            z-index :  1000;
+            padding: 10px 20px;
+
+        }
+
+
+
+
+        .logo a {
+            /*this target the heading of websit */
+
+            font-size: 36px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #007BFF;
+
+        }
+
+
+        .navdiv {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .navdiv a {
+            color: #000000;
+        }
+
+        .buttoncreate button {
+            /* This is for  create account buttom */
+            font-size: 20px;
+            padding: 10px;
+            background-color: rgb(119, 178, 255);
+            border-radius: 5px;
+            cursor: pointer;
+            color: aliceblue;
+            width: 100%;
+            border: none;
+
+        }
+
+        .buttoncreate button:hover {
+            background-color: #0056b3;
+            transform: scale(1.1); 
+    transition: all 0.3s ease-in-out;
+        }
+
+
+        p {
+            /* This is for copyright */
+            text-align: center
+        }
+
+        nav a {
+            /* this css create for link (href /list tag) */
+            text-decoration: none;
+            height: 0px;
+            width: 250px;
+        }
+        .navbar ul a{
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+            padding: 10px,5px;
+            border-radius: 5px;
+            transition: all 0.3 ease;
+         }
+
+        
+       
+
+
+
+        .navbar ul {
+            /* this tag use to targat unorder list */
+            list-style-type: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+            align-items: center;
+            gap: 50px;
+            
+        }
+        .navbar ul li{
+            margin: 0;
+        }
+
+
+        li:hover{
+            transform: scale(1.1); 
+    transition: all 0.3s ease-in-out;
+        }
+        
+
+        form {
+            /* this tag  use to help set userinterface border in the email box */
+            border: 10px;
+            border-radius: 8px;
+            margin: 50px auto;
+            max-width: 400px;
+            padding: 20px 30px;
+            box-shadow: 0 4px6px rgba(0, 0,0 ,0.1 );
+            background-color: rgba(0, 0,0 ,0.1 );
+        }
+        form label{display: block;
+        margin: 5px;
+    font-weight: bold;
+}
+
+       form input {
+            /*this tag help to targat emil password box radius*/
+            width: calc(100% - 16px);
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 2px solid #ccc;
+            touch-action: manipulation;
+
+        }
+        form input:focus{
+            border-color: #007BFF;
+            box-shadow: 0 0 5px rgba(0,123,255,0.5) ;
+        }
+
+
+
+        .login button {
+            /* this is for login button*/
+            margin: 20px;
+            padding: 5px;
+            color: rgb(55, 17, 17);
+            border-radius: 5px;
+            border: solid 2px;
+            border-radius: 5px;
+            font-size: 1.1em;
+            background: transparent;
+        }
+
+        .login button:hover {
+            border-image: linear-gradient(45deg,
+                    red, orange, yellow, green, blue, indigo, violet) 1;
+            
+            background-color:  rgb(119, 178, 255);
+            border-radius: 5px;
+            transform: scale(1.1); 
+    transition: all 0.3s ease-in-out;
+
+
+        }
+
+        .login a {
+            color: #000000;
+            font-size: large;
+
+
+        }
+
+        .signup button {
+            margin: 20px;
+            padding: 5px;
+            color: rgb(250, 253, 255);
+            background-color:  rgb(119, 178, 255);
+            border-radius: 12px;
+
+
+
+
+        }
+        .signup button:hover{
+            transform: scale(1.1); 
+    transition: all 0.3s ease-in-out;
+        }
+
+        .signup a {
+            /*this is for singup button*/
+            color: aliceblue;
+            font-size: large;
+
+        }
+        .cright {
+            text-align: center;
+            padding: 10px;
+            background-color: rgb(255, 255, 255);
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            left: 50%;
+            transform: translate(-50%);
+            box-shadow: 0 -2px 4px rgb(0,0,0 0.1);
+            
+
+        }
+        .cright   a{
+            text-decoration: none;
+            color: rgb(119, 178, 255)
+        }
+        .cright a:hover{
+            text-decoration: underline;
+        }
+
+    </style>
+
+
+    <!-- <link rel="stylesheet"href="style.css"> -->
+</head>
+
+<body>
+
+    <div>
+
+    </div>
+    <nav class="navbar">
+        <div class="navdiv">
+            <div class="logo">
+                <a href="#"> BiConnector</a>
+            </div>
+
+
+            <ul>
+                <li><a href="https://example.com"> about</a> </li>
+                <li> <a href="https://example.com">home</a> </li>
+                <li> <a href="https://example.com"> logout</a> </li>
+
+                <li> <a href="https://example.com"> help</a></li>
+                <div class="login"> <button><a href="#">Log in</a> </button>
+                </div>
+                <div class="signup"> <button><a href="#">Sing up</a> </button>
+                </div>
+            </ul>
+
+
+
+        </div>
+    </nav>
+</body>
+<a href=""> </a>
+
+
+
+<form>
+    <h2> Logn in sign up for BiConnector</h2>
+    <label for="Email "><b> Email:</b> </label>
+
+
+    <input type="text" placeholder="Enter your email" name="fname ">
+    <br>
+    <a href="">forgotemail</a>
+    <br>
+    <label for="Password"><b>Password:<b> </label>
+    <input type="text" placeholder="Enter your password" name="/name">
+    <br>
+    <a href="">forgotpassword</a>
+
+
+    <div class="buttoncreate"> <button>Create account</button></div>
+
+
+</form>
+
+
+
+
+<div class="cright"> 
+<p> &copy;2025<a href="#">BiConnector</a>."All right reserved."</p>
+</div>
+
+</body>
+
+</html>
